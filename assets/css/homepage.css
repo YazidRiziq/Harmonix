@@ -96,8 +96,18 @@ body {
     gap: 120px;
 }
 
+.content-1 h2 {
+    margin: 0 0 0 30px;
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .content-a {
-    width: 90vw;
+    width: 85vw;
     height: 280px;
     display: flex;
     flex-direction: row;
@@ -105,6 +115,8 @@ body {
     white-space: nowrap;
     justify-content: flex-start;
     gap: 50px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 .content-sticky {
@@ -126,4 +138,28 @@ body {
     margin: 10px 0px;
     object-fit: cover;
     cursor: pointer;
+}
+
+.scroll-left {
+    background-color: white;
+    border: none;
+    font-size: 24px;
+    padding: 0 10px 0 5px;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.scroll-right {
+    background-color: white;
+    border: none;
+    font-size: 24px;
+    padding: 0 5px 0 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.scroll-left:hover, .scroll-right:hover {
+    background-color: #005d68;
 }

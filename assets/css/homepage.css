@@ -93,21 +93,37 @@ body {
     margin-left: 120px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 120px;
 }
 
 .content-a {
+    width: 90vw;
+    height: 280px;
     display: flex;
-    width: 100vw;
-    height: 100px;
     flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
     justify-content: flex-start;
     gap: 50px;
 }
 
+.content-sticky {
+    position: sticky;
+    top: 0;
+}
+
 .album-item {
-    padding: 30px;
-    background-color: #005d68;
     border-radius: 15px;
+    font-size: 20px;
     text-align: center;
+}
+
+.album-item img {
+    height: 200px;
+    width: 200px;
+    border-radius: 8%;
+    border: solid 2px white;
+    margin: 10px 0px;
+    object-fit: cover;
+    cursor: pointer;
 }

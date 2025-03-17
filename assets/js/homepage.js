@@ -1,15 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const Scroll = document.querySelector(".content-a");
-    const left = document.querySelector(".scroll-left");
-    const right = document.querySelector(".scroll-right");
+    function scrollAlbum (scrollLeft, scrollRight, scrollContainer) {
+        const scrollContainerAlbum = document.querySelector(scrollContainer);
+        const scrollLeftAlbum = document.querySelector(scrollLeft);
+        const scrollRightAlbum = document.querySelector(scrollRight);
 
-    const ScrollAmount = 300;
+        const scrollAmount = 300;
 
-    left.addEventListener("click", () => {
-        Scroll.scrollLeft -= ScrollAmount;
-    });
+        scrollLeftAlbum.addEventListener("click", () => {
+            scrollContainerAlbum.scrollLeft -= scrollAmount;
+        });
 
-    right.addEventListener("click", () => {
-        Scroll.scrollLeft += ScrollAmount;
-    });
+        scrollRightAlbum.addEventListener("click", () => {
+            scrollContainerAlbum.scrollLeft += scrollAmount;
+        });
+    };
+
+    scrollAlbum(".scroll-left-1", ".scroll-right-1", ".content-a-1");
+    scrollAlbum(".scroll-left-2", ".scroll-right-2", ".content-a-2");
 });

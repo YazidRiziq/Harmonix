@@ -91,9 +91,9 @@ body {
     margin: 20px;
     margin-top: 120px;
     margin-left: 120px;
-    display: flex;
+    display: flex;  
     flex-direction: column;
-    gap: 120px;
+    gap: 50px;
 }
 
 .content-1 h2 {
@@ -106,7 +106,7 @@ body {
     gap: 10px;
 }
 
-.content-a {
+.content-a-1, .content-a-2 {
     width: 85vw;
     height: 280px;
     display: flex;
@@ -140,7 +140,7 @@ body {
     cursor: pointer;
 }
 
-.scroll-left {
+.scroll-left-1, .scroll-left-2 {
     background-color: white;
     border: none;
     font-size: 24px;
@@ -150,7 +150,7 @@ body {
     cursor: pointer;
 }
 
-.scroll-right {
+.scroll-right-1, .scroll-right-2 {
     background-color: white;
     border: none;
     font-size: 24px;
@@ -160,6 +160,6 @@ body {
     cursor: pointer;
 }
 
-.scroll-left:hover, .scroll-right:hover {
+.scroll-left-1:hover, .scroll-left-2:hover, .scroll-right-1:hover, .scroll-right-2:hover {
     background-color: #005d68;
 }

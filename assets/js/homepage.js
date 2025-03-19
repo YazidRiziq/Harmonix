@@ -17,4 +17,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     scrollAlbum("scroll-left-1", "scroll-right-1", "content-a-1");
     scrollAlbum("scroll-left-2", "scroll-right-2", "content-a-2");
+    scrollAlbum("scroll-left-3", "scroll-right-3", "content-a-3");
 });

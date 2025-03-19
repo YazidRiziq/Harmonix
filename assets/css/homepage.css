@@ -65,9 +65,10 @@ body {
     display: flex;
     flex-direction: row;
     left: 100px;
-    width: 100%;
+    width: 90vw;
     height: 100px;
     align-items: center;
+    justify-content: space-between;
     z-index: 100;
 }
 
@@ -82,17 +83,60 @@ body {
     color: inherit;
 }
 
-.search {
-    font-size: 15px;
-    margin: 20px;
-    border: #005d68 solid 8px;
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px 15px;
+    width: 300px;
+    margin-right: 50%;
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.search-container button {
+    border: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #a9a9a9;
+}
+
+.search-container button img {
+    width: 20px;
+    height: 20px;
+}
+
+.setting-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.setting-icon:hover {
+    background-color: #005d68;
 }
 
 /* Style untuk main content */
 .content {
     margin: 20px;
     margin-top: 120px;
-    margin-left: 120px;
+    margin-left: 100px;
     display: flex;  
     flex-direction: column;
     gap: 50px;
@@ -108,7 +152,7 @@ body {
     gap: 10px;
 }
 
-.content-a-1, .content-a-2 {
+.content-a-1, .content-a-2, .content-a-3 {
     width: 85vw;
     height: 280px;
     display: flex;
@@ -127,22 +171,33 @@ body {
 }
 
 .album-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
     border-radius: 15px;
     font-size: 20px;
     text-align: center;
 }
 
 .album-item img {
-    height: 200px;
+    height: 210px;
     width: 200px;
     border-radius: 8%;
     border: solid 2px white;
-    margin: 10px 0px;
+    margin: 0px;
+    margin-top: 10px;
     object-fit: cover;
     cursor: pointer;
 }
 
-.scroll-left-1, .scroll-left-2 {
+.album-item p {
+    padding-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.scroll-left-1, .scroll-left-2, .scroll-left-3 {
     background-color: white;
     border: none;
     font-size: 24px;
@@ -152,7 +207,7 @@ body {
     cursor: pointer;
 }
 
-.scroll-right-1, .scroll-right-2 {
+.scroll-right-1, .scroll-right-2, .scroll-right-3 {
     background-color: white;
     border: none;
     font-size: 24px;
@@ -162,6 +217,6 @@ body {
     cursor: pointer;
 }
 
-.scroll-left-1:hover, .scroll-left-2:hover, .scroll-right-1:hover, .scroll-right-2:hover {
+.scroll-left-1:hover, .scroll-left-2:hover, .scroll-left-3:hover, .scroll-right-1:hover, .scroll-right-2:hover, .scroll-right-3:hover {
     background-color: #005d68;
 }

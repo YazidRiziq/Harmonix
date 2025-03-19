@@ -33,7 +33,7 @@ body {
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    border: solid 2px aquamarine;
+    border: none;
     cursor: pointer;
 }
 
@@ -72,15 +72,18 @@ body {
     z-index: 100;
 }
 
-.harmonix-text {
-    margin: 20px;
-    font-size: 30px;
-    cursor: pointer;
+@font-face {
+    font-family: "CustomFont";
+    src: url(../font/PatrickHandSC-Regular.ttf);
 }
 
-.topbar a {
-    text-decoration: none;
-    color: inherit;
+.harmonix-text a {
+    font-family: "CustomFont";
+    margin: 20px 20px 20px 40px;
+    font-size: 40px;
+    cursor: pointer;
+    text-decoration: solid;
+    color: white;
 }
 
 .search-container {

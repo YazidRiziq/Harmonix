@@ -34,13 +34,12 @@ body {
     width: 70px;
     border-radius: 50%;
     border: none;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
 }
 
 .logo-picture:hover {
     transform: scale(1.2);
-    transition: 0.5s;
-    
 }
 
 .album {
@@ -50,12 +49,12 @@ body {
     border: solid 2px white;
     margin: 10px 0px;
     object-fit: cover;
+    transition: 0.5s;
     cursor: pointer;
 }
 
 .album:hover {
     transform: scale(1.2);
-    transition: 0.5s;
 }
 
 /* Styling untuk topbar -----------------------------------*/
@@ -65,7 +64,7 @@ body {
     display: flex;
     flex-direction: row;
     left: 100px;
-    width: 90vw;
+    width: 92vw;
     height: 100px;
     align-items: center;
     justify-content: space-between;
@@ -124,6 +123,7 @@ body {
 }
 
 .setting-icon {
+    margin: 0 30px;
     width: 40px;
     height: 40px;
     background-color: white;

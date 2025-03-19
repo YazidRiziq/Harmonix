@@ -187,14 +187,12 @@ body {
     width: 200px;
     border-radius: 8%;
     border: solid 2px white;
-    margin: 0px;
-    margin-top: 15px;
+    margin: 15px 0 10px 0;
     object-fit: cover;
     cursor: pointer;
 }
 
 .album-item p {
-    padding-top: 8px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

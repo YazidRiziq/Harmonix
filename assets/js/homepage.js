@@ -1,3 +1,4 @@
+// Fungsi untuk scroll 
 document.addEventListener("DOMContentLoaded", function() {
     function scrollAlbum (scrollLeftId, scrollRightId, scrollContainerId) {
         const scrollContainerAlbum = document.getElementById(scrollContainerId);
@@ -19,3 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollAlbum("scroll-left-2", "scroll-right-2", "content-a-2");
     scrollAlbum("scroll-left-3", "scroll-right-3", "content-a-3");
 });
+
+// Fungsi Tombol Sidebar
+document.getElementById("menuBtn").addEventListener("click", function() {
+    document.querySelector(".sidebar").classList.toggle("show")
+})

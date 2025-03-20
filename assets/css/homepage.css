@@ -135,7 +135,7 @@ body {
     background-color: #005d68;
 }
 
-/* Style untuk main content */
+/* Style untuk main content -----------------------------------------*/
 .content {
     margin: 20px;
     margin-top: 120px;
@@ -220,4 +220,109 @@ body {
 
 .scroll-left-1:hover, .scroll-left-2:hover, .scroll-left-3:hover, .scroll-right-1:hover, .scroll-right-2:hover, .scroll-right-3:hover {
     background-color: #005d68;
+}
+
+/* For Mobile Display */
+@media (max-width: 430px) {
+    /* Styling untuk sidebar ------------------------------*/
+    .sidebar {
+        left: -75px;
+        width: 75px;
+        transition: 0.3s ease-in-out;
+        z-index: 200;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .logo-picture {
+        height: 55px;
+        width: 55px;
+    }
+
+    .album {
+        height: 50px;
+        width: 50px;
+    }
+
+    /* Styling untuk topbar -----------------------------------*/
+    .topbar {
+        left: 0;
+        width: 135vw;
+    }
+
+    .menuBtn {
+        margin: 0 10px 0 20px;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+    }
+
+    .menuBtn:hover {
+        color: #005d68;
+    }
+
+    .harmonix-text a {
+        margin: 20px 20px 20px 20px;
+    }
+
+    .search-container {
+        margin-right: 20px;
+        padding: 5px;
+        width: 140px;
+    }
+
+    .search-container input {
+        max-width: 100px;
+    }
+    
+    .search-container button {
+        border: none;
+        background-color: white;
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .setting-icon {
+        margin: 0 20px 0 0;
+
+    }
+
+    .setting-icon:hover {
+        background-color: #005d68;
+    }
+
+}
+
+/* For Tablet Display */
+@media (max-width: 1024px) and (min-width: 430px) {
+    /* Styling untuk topbar -----------------------------------*/
+    .harmonix-text a {
+        margin: 20px 50px 20px 50px;
+    }
+
+    .search-container {
+        margin-right: 15%;
+    }
+
+    .setting-icon {
+        margin: 0 50px 0 0;
+    }
+
+    /* Style untuk main content -----------------------------------------*/
+    .content-a-1, .content-a-2, .content-a-3 {
+        margin: 0 25px;
+    }
+
+    .scroll-left-1, .scroll-left-2, .scroll-left-3 {
+        display: none;
+    }
+
+    .scroll-right-1, .scroll-right-2, .scroll-right-3 {
+        display: none;
+    }
 }

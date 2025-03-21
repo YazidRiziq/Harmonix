@@ -71,6 +71,10 @@ body {
     z-index: 100;
 }
 
+.menuBtn {
+    display: none;
+}
+
 @font-face {
     font-family: "CustomFont";
     src: url(../font/PatrickHandSC-Regular.ttf);
@@ -253,6 +257,7 @@ body {
     }
 
     .menuBtn {
+        display: block;
         margin: 0 10px 0 20px;
         font-size: 30px;
         background: none;
@@ -289,11 +294,61 @@ body {
 
     .setting-icon {
         margin: 0 20px 0 0;
-
     }
 
-    .setting-icon:hover {
-        background-color: #005d68;
+    /* Style untuk main content -----------------------------------------*/
+    .content {
+        width: 100vw;
+        margin: 120px 20px 20px 20px;
+        gap: 40px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .content.swipe {
+        width: 90%;
+        margin-left: 22%;
+    }
+
+    .content-a-1.swipe, .content-a-2.swipe, .content-a-3.swipe {
+        width: 50%;
+    }
+    
+    .content-1 h2 {
+        margin: 0;
+    }
+
+    .content-a-1, .content-a-2, .content-a-3 {
+        width: 85vw;
+        height: 230px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .album-item {
+        font-size: 16px;
+        width: 150px;
+        height: 230px;
+    }
+    
+    .album-item img {
+        height: 160px;
+        width: 150px;
+        margin: 15px 0 10px 0;
+    }
+    
+    .album-item p {
+        width: 150px;
+    }
+
+    .scroll-container {
+        flex-direction: column;
+    }
+    
+    .scroll-left-1, .scroll-left-2, .scroll-left-3 {
+        display: none;
+    }
+    
+    .scroll-right-1, .scroll-right-2, .scroll-right-3 {
+        display: none;
     }
 
 }

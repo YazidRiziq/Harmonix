@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #252e42;
+    color: white;
+}
+
+/* Styling untuk sidebar ------------------------------*/
+.sidebar {
+    width: 100px;
+    height: 100%;
+    background-color: #005d68;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.album-list-sidebar {
+    margin-top: 30px;
+}
+
+.logo-picture {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.logo-picture:hover {
+    transform: scale(1.2);
+}
+
+.album {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid 2px white;
+    margin: 10px 0px;
+    object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.album:hover {
+    transform: scale(1.2);
+}
+
+/* Styling untuk topbar -----------------------------------*/
+.topbar {
+    position: fixed;
+    background-color: #252e42;
+    display: flex;
+    flex-direction: row;
+    left: 100px;
+    width: 92vw;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.menuBtn {
+    display: none;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url(../font/PatrickHandSC-Regular.ttf);
+}
+
+.harmonix-text a {
+    font-family: "CustomFont";
+    margin: 20px 20px 20px 50px;
+    font-size: 40px;
+    cursor: pointer;
+    text-decoration: solid;
+    color: white;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px 15px;
+    width: 300px;
+    margin-right: 50%;
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.search-container button {
+    border: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #a9a9a9;
+}
+
+.search-container button img {
+    width: 20px;
+    height: 20px;
+}
+
+.setting-icon {
+    margin: 0 30px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.setting-icon:hover {
+    background-color: #005d68;
+}
+
+/* Styling for Main Content */
+.banner {
+    background: linear-gradient(to top, #005d68, #252e42);
+    margin: 100px 0px 20px 100px;
+    width: 93vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner img {
+    height: 210px;
+    width: 200px;
+    border-radius: 8%;
+    border: solid 3px white;
+    margin: 15px 30px 10px 10%;
+    object-fit: cover;
+}
+
+.list-music  {
+    padding: 0 20px;  
+    margin-left: 100px;
+    max-height: 350px;
+    overflow-y: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.tableMusic {
+    width: 90vw;
+    border-collapse: collapse;
+    background-color: #005d68;
+}
+
+.tableMusic thead {
+    background-color: #252e42;
+    position: sticky;
+    top: 0;
+}
+
+.tableMusic th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+.tableMusic th {
+    font-weight: bold;
+}
+
+.tableMusic tbody tr {
+    border-bottom: 1px solid #252e42;
+}
+
+.tableMusic tbody tr:hover {
+    background-color: #252e42;
+}
+
+.play-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.play-btn:hover {
+    color: #005d68;
+}

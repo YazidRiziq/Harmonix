@@ -186,6 +186,11 @@ body {
     text-align: center;
 }
 
+.album-item a {
+    color: white;
+    text-decoration: solid;
+}
+
 .album-item img {
     height: 210px;
     width: 200px;

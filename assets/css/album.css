@@ -170,6 +170,10 @@ body {
     scrollbar-width: none;
 }
 
+.list-music.show {
+    max-height: 300px;
+}
+
 .tableMusic {
     width: 90vw;
     border-collapse: collapse;
@@ -209,4 +213,52 @@ body {
 
 .play-btn:hover {
     color: #005d68;
+}
+
+/* Styling for Audio Controller */
+.audio-controller {
+    bottom: -100px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #005d68, #252e42);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 300;
+    transition: 0.3s ease-in-out;
+}
+
+.audio-controller.show {
+    bottom: 0;
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.track-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.audio-controller button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.audio-controller button:hover {
+    color: #005d68;
+}
+
+.audio-controller input[type="range"] {
+    width: 100px;
 }

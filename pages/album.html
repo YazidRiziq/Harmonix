@@ -57,7 +57,7 @@
                 <h1>Bruno Mars - 24K Magic</h1>
             </div>
         </div>
-        <div class="list-music">
+        <div class="list-music" id="list-music">
             <table class="tableMusic">
                 <thead>
                     <tr>
@@ -71,10 +71,12 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>24K Magic</td>
+                        <td>Lazy Song</td>
                         <td>Funky & Energetic</td>
                         <td>3:46</td>
-                        <td><button class="play-btn">▶</button></td>
+                        <td><button class="play-btn" audio-src="../assets/audio/Bruno Mars - The Lazy Song (Official Music Video) [fLexgOxsZu0].mp3" image-src="../assets/images/Lazy-song.jpg" title-src="The Lazy Song" artist-src="Bruno Mars">
+                            ▶
+                        </button></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -296,6 +298,25 @@
                 </tbody>
             </table>
         </div>
-     </main>
+    </main>
+
+    <!-- Audio Controller -->
+    <div class="audio-controller" id="audio-controller">
+        <div class="track-info">
+            <img id="track-image" src="../assets/images/Lazy-song.jpg" alt="album art">
+            <div>
+                <h4 id="track-title">Lazy Song</h4>
+                <p id="track-artist">Bruno Mars</p>
+            </div>
+        </div>
+        <audio id="audio-player" src="../assets/audio/Bruno Mars - The Lazy Song (Official Music Video) [fLexgOxsZu0].mp3"></audio>
+        <input type="range" id="progress-bar" value="0">
+        <button id="prev-btn">⏮</button>
+        <button id="play-pause-btn">⏯</button>
+        <button id="next-btn">⏭</button>
+        <input type="range" id="volume-control" min="0" max="1" step="0.1">
+    </div>
+
+    <script src="../assets/js/album.js"></script>
 </body>
 </html>

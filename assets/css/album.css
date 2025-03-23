@@ -156,8 +156,18 @@ body {
     width: 200px;
     border-radius: 8%;
     border: solid 3px white;
-    margin: 15px 30px 10px 10%;
+    margin: 15px 30px 10px 5%;
     object-fit: cover;
+}
+
+.banner .text-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.banner .text-banner h1 {
+    padding-right: 20px;
 }
 
 .list-music  {
@@ -168,6 +178,7 @@ body {
     position: relative;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    transition: 0.2s;
 }
 
 .list-music.show {
@@ -324,4 +335,154 @@ body {
 
 .audio-right .input-right::-webkit-slider-thumb:hover {
     scale: 1.2;
+}
+
+/* For Tablet Display */
+@media (max-width: 1024px) and (min-width: 430px) {
+    /* Styling untuk topbar -----------------------------------*/
+    .topbar {
+        width: 95vw;
+    }
+    .harmonix-text a {
+        margin: 20px 50px 20px 50px;
+    }
+
+    .search-container {
+        margin-right: 15%;
+    }
+
+    .setting-icon {
+        margin: 0 50px 0 0;
+    }
+
+    /* Styling for Main Content ---------------------------*/
+    .banner {
+        width: 95vw;
+    }
+
+    .list-music  {
+        max-height: 700px;
+    }
+
+    .list-music.show {
+        max-height: 650px;
+    }
+
+}
+
+/* For Mobile Display */
+@media (max-width: 430px) {
+    /* Styling untuk sidebar ------------------------------*/
+    .sidebar {
+        left: -75px;
+        width: 75px;
+        transition: 0.3s ease-in-out;
+        z-index: 200;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .logo-picture {
+        height: 55px;
+        width: 55px;
+    }
+
+    .album {
+        height: 50px;
+        width: 50px;
+    }
+
+    /* Styling untuk topbar -----------------------------------*/
+    .topbar {
+        left: 0;
+        width: 133vw;
+    }
+
+    .menuBtn {
+        display: block;
+        margin: 0 10px 0 20px;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+    }
+
+    .menuBtn:hover {
+        color: #005d68;
+    }
+
+    .harmonix-text a {
+        margin: 20px 20px 20px 30px;
+    }
+
+    .search-container {
+        margin-right: 20px;
+        padding: 5px;
+        width: 140px;
+    }
+
+    .search-container input {
+        max-width: 100px;
+    }
+    
+    .search-container button {
+        border: none;
+        background-color: white;
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .setting-icon {
+        margin: 0 20px 0 0;
+    }
+
+    /* Styling for Main Content ---------------------------*/
+    .banner {
+        margin: 100px 0px 20px 0;
+        width: 135vw;
+        height: 40vh;
+        transition: 0.3s;
+    }
+
+    .banner.swipe {
+        margin: 100px 0px 20px 70px;
+        width: 120vw;
+    }
+
+    .list-music  {
+        margin-left: 0;
+        max-height: 480px;
+        transition: 0.3s;
+    }
+
+    .list-music.swipe {
+        margin-left: 100px;
+    }
+
+    .list-music.show {
+        max-height: 400px;
+    }
+
+    .tableMusic {
+        width: 125vw;
+        transition: 0.3s;
+    }
+
+    .tableMusic.swipe {
+        width: 90vw;
+    }
+
+    /* Styling for Audio Controller -------------------------------------*/
+    .audio-center .input-center {
+        width: 250px;
+    }
+
+    .audio-right {
+        display: none;
+    }
+
 }

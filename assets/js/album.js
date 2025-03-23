@@ -72,3 +72,35 @@ document.addEventListener("DOMContentLoaded", function() {
         playPauseBtn.innerHTML = "▶";
     });
 });
+
+// Fungsi Tombol Sidebar --------------------------------------------
+document.getElementById("menuBtn").addEventListener("click", function(event) {
+    event.stopPropagation();
+    document.querySelector(".sidebar").classList.toggle("show");
+});
+
+document.getElementById("menuBtn").addEventListener("click", function(event) {
+    event.stopPropagation();
+    const elements = document.querySelectorAll(".banner, .list-music, .tableMusic");
+    elements.forEach(element => {
+        element.classList.toggle("swipe");
+    });
+});
+
+document.addEventListener("click", function(event) {
+    const sidebar = document.querySelector(".sidebar");
+    const banner = document.querySelector(".banner");
+    const listMusic = document.querySelector(".list-music");
+    const tableMusic = document.querySelector(".tableMusic");
+
+    if (
+        !sidebar.contains(event.target) && event.target !== menuBtn &&
+        !banner.contains(event.target) && !listMusic.contains(event.target)
+        && !tableMusic.contains(event.target)
+    ) {
+        sidebar.classList.remove("show");
+        banner.classList.remove("swipe");
+        listMusic.classList.remove("swipe");
+        tableMusic.classList.remove("swipe");
+    }
+});

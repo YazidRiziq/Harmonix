@@ -187,6 +187,7 @@ body {
 }
 
 .album-item a {
+    display: grid;
     color: white;
     text-decoration: solid;
 }
@@ -258,7 +259,7 @@ body {
     /* Styling untuk topbar -----------------------------------*/
     .topbar {
         left: 0;
-        width: 135vw;
+        width: 110vw;
     }
 
     .menuBtn {
@@ -275,7 +276,7 @@ body {
     }
 
     .harmonix-text a {
-        margin: 20px 20px 20px 20px;
+        margin: 20px 20px 20px 30px;
     }
 
     .search-container {

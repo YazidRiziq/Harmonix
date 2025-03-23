@@ -20,8 +20,15 @@ body {
     align-items: center;
 }
 
+@font-face {
+    font-family: "CustomFont";
+    src: url(../font/PatrickHandSC-Regular.ttf);
+}
+
 .login-container h2 {
-    margin-bottom: 30px;
+    font-family: "CustomFont";
+    margin-bottom: 5px 30px 50px 30px;
+    font-size: 34px;
 }
 
 .login-container form {
@@ -32,6 +39,7 @@ body {
 }
 
 .login-container label {
+    font-family: "CustomFont";
     display: block;
     text-align: left;
 }

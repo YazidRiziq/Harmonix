@@ -139,7 +139,7 @@ body {
     background-color: #005d68;
 }
 
-/* Styling for Main Content */
+/* Styling for Main Content ---------------------------*/
 .banner {
     background: linear-gradient(to top, #005d68, #252e42);
     margin: 100px 0px 20px 100px;
@@ -215,7 +215,7 @@ body {
     color: #005d68;
 }
 
-/* Styling for Audio Controller */
+/* Styling for Audio Controller -------------------------------------*/
 .audio-controller {
     bottom: -100px;
     position: fixed;
@@ -241,6 +241,7 @@ body {
 }
 
 .track-info img {
+    margin-left: 10px;
     width: 50px;
     height: 50px;
     border-radius: 10px;
@@ -259,6 +260,68 @@ body {
     color: #005d68;
 }
 
-.audio-controller input[type="range"] {
-    width: 100px;
+.audio-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.audio-center .center-button button {
+    margin: 0px 20px 10px 20px;
+    font-size: 20px;
+}
+
+.audio-center .input-center {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #a9a9a9;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.audio-center .input-center::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.audio-center .input-center::-webkit-slider-thumb:hover {
+    scale: 1.2;
+}
+
+.audio-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.audio-right .input-right {
+    -webkit-appearance: none;
+    width: 80px;
+    height: 5px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: #a9a9a9;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.audio-right .input-right::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.audio-right .input-right::-webkit-slider-thumb:hover {
+    scale: 1.2;
 }
